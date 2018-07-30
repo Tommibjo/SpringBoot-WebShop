@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Create temporary account for the webshop</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/index.css}"/>
+    </head>
+    <body>
+        <div class="container">
+            <form th:action="@{/}" method="POST">
+                Name:
+                <input type="text" name="name"/>
+                Surname:
+                <input type="text" name="surname"/>
+                Address:
+                <input type="text" name="address"/>
+                <p></p>
+                <input type="submit"/>
+            </form>
+        </div>
+    </body>
+</html>
