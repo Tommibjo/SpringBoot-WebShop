@@ -10,14 +10,13 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" th:href="@{/index.css}"/>
     </head>
     <body>
+   
         <div class="container">
             <form th:action="@{/}" method="POST">
-                Name:
-                <input type="text" name="name"/>
-                Surname:
-                <input type="text" name="surname"/>
+                Full name:
+                <input type="text" name="owner"/>
                 Address:
-                <input type="text" name="address"/>
+                <input type="text" name="deliveryAddress"/>
                 <p></p>
                 <input type="submit"/>
             </form>

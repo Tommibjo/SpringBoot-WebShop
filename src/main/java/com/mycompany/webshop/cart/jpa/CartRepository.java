@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.webshop.user.jpa;
+package com.mycompany.webshop.cart.jpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -11,6 +11,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author tommib
  */
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface CartRepository extends JpaRepository<Cart, Long>{
     
 }

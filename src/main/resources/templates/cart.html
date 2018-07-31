@@ -7,17 +7,9 @@ and open the template in the editor.
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>TODO supply a title</title>
-        <link rel="stylesheet" type="text/css" th:href="@{/index.css}"/>
-        <script th:src="@{/shop.js}"></script>
     </head>
     <body>
-             <a th:href="@{/cart}">Cart</a>
-        <div class="container">
-            <ol>
-                <li th:each="pos : ${products}">
-                    <span th:text="${pos}"/>
-                </li>
-            </ol>
-        </div>
+        <a th:href="@{/}">Shop</a>
+        <div>Stuff you have in cart</div>
     </body>
 </html>

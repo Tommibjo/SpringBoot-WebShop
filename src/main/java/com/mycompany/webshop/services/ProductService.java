@@ -7,6 +7,7 @@ package com.mycompany.webshop.services;
 
 import com.mycompany.webshop.product.jpa.Product;
 import com.mycompany.webshop.product.jpa.ProductRepository;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,10 +22,18 @@ public class ProductService {
     private ProductRepository productrepository;
 
     public ProductService() {
-    /*    productrepository.saveAndFlush(new Product("Apple", 0.2));
-        productrepository.saveAndFlush(new Product("Banana", 0.1));
-        productrepository.saveAndFlush(new Product("Kiwi", 0.15));
-        productrepository.saveAndFlush(new Product("Oragen", 0.1));*/
+
+    }
+
+    public void initializeProducts() {
+        productrepository.saveAndFlush(new Product("banana", 0.2));
+        productrepository.saveAndFlush(new Product("apple", 0.15));
+        productrepository.saveAndFlush(new Product("kiwi", 0.25));
+        productrepository.saveAndFlush(new Product("Orange", 0.1));
     }
     
+    public List getProducts(){
+       return productrepository.findAll();
+    }
+
 }
